@@ -1,0 +1,10 @@
+com/module3/service/IGenaricService.java
+ com.module3.service.IGenaricService
+com/module3/model/Customer.java
+ com.module3.model.Customer
+com/module3/service/ICustomerService.java
+ com.module3.service.ICustomerService
+com/module3/controller/CustomerServlet.java
+ com.module3.controller.CustomerServlet
+com/module3/service/CustomerService.java
+ com.module3.service.CustomerService
