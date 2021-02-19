@@ -15,11 +15,11 @@
     <table>
         <tr>
             <td>Name</td>
-            <td><input type="text" name="name" value="${customer.getName()}"></td>
+            <td><input type="text" name="name" value="${c.getName()}"></td>
         </tr>
         <tr>
             <td>Address</td>
-            <td><input type="text" name="address" value="${customer.getAddress()}"></td>
+            <td><input type="text" name="address" value="${c.getAddress()}"></td>
         </tr>
         <tr>
             <td><input type="submit" value="delete"></td>

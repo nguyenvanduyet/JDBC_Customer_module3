@@ -116,7 +116,7 @@ public class CustomerService implements ICustomerService {
     public void delete(int id) {
         Connection connection = getConnection();
         try {
-            PreparedStatement p = connection.prepareStatement("delete * from customer where id=?");
+            PreparedStatement p = connection.prepareStatement("delete from customer where id=?");
             p.setInt(1,id);
             p.executeUpdate();
         } catch (SQLException throwables) {

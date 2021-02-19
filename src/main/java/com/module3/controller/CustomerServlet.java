@@ -130,8 +130,10 @@ public class CustomerServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = customerService.findById(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/edit.jsp");
+        request.setAttribute("c",customer);
         try {
             dispatcher.forward(request,response);
+
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -143,6 +145,7 @@ public class CustomerServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = customerService.findById(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/delete.jsp");
+        request.setAttribute("c", customer);
         try {
             dispatcher.forward(request,response);
         } catch (ServletException e) {
